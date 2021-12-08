@@ -63,30 +63,31 @@ namespace Task_11
     }
     struct Equation
     {
-        public double k { get; set; }
-        public double b { get; set; }
-
+        public double K { get; set; }
+        public double B { get; set; }
+                
         public Equation(double k, double b)
         {
-            this.k = k;
-            this.b = b;
+            K = k;
+            B = b;
         }
+
 
         public void Root()
         {
-            if (k == 0 && b == 0)
+            if (K == 0 && B == 0)
             {
                 Console.WriteLine("Уравнение имеет бесконечное количество решений");
             }
             else
             {
-                if (k == 0)
+                if (K == 0)
                 {
                     Console.WriteLine("Уравнение не имеет решения");
                 }
                 else
                 {
-                    double x = -b / k;
+                    double x = -B / K;
                     Console.WriteLine("Корень уравнения x = {0}", x);
                 }
 
